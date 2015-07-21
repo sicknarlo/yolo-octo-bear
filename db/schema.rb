@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719060047) do
+ActiveRecord::Schema.define(version: 20150721070235) do
 
   create_table "players", force: :cascade do |t|
     t.string   "name"
@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(version: 20150719060047) do
     t.integer  "rank"
     t.integer  "adp"
     t.integer  "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "search_name"
   end
 
 end

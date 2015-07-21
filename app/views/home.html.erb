@@ -3,7 +3,7 @@
 </div> 
 
 <div class="col-md-5">
-  <form>
+  <form name="q" method="get">
     <div class="form-group">
       <label for="team1">Team 1</label>
       <input type="player" class="form-control" id="t1p1" placeholder="Player Name">
@@ -21,7 +21,6 @@
 </div>
 
 <div class="col-md-5 col-md-offset-1">
-  <form>
     <div class="form-group">
       <label for="team2">Team 2</label>
       <input type="player" class="form-control" id="t2p1" placeholder="Player Name">
@@ -35,5 +34,8 @@
       <input type="player" class="form-control" id="t2p5" placeholder="Player Name">
     </div>
     <br>
+    <button type="submit" form="q" value="Submit">Submit</button>
+    <br>
     <h3>Team 2 Value: </h3>
+    </form>
 </div>

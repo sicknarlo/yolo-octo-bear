@@ -1,0 +1,48 @@
+<div class="col-md-6 col-md-offset-3 text-center">
+  <h3>Enter the players being exchanged. Output value is based on aggregated ADP data.</h3>
+</div> 
+
+<div class="col-md-5">
+  <%= form_tag("/results", method: "get") do %>
+    <%= text_field_tag(:t1p1) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t1p2) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t1p3) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t1p4) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t1p5) %>
+    <br>
+    <br>
+    <%= submit_tag("Search") %>
+    <h3>Team 1 Value: <%= @team1_value %></h3>
+    <h3>Team 1 Gains: <%= @team1_gain %></h3>
+</div>
+
+<div class="col-md-5 col-md-offset-1">
+  <%= text_field_tag(:t2p1) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t2p2) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t2p3) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t2p4) %>
+    <br>
+    <br>
+    <%= text_field_tag(:t2p5) %>
+    <br>
+    <br>
+  <% end %>
+    <br>
+    <h3>Team 2 Value: <%= @team2_value %></h3>
+    <h3>Team 2 Value: <%= @team2_gain %></h3>
+    <br>
+ </div>
